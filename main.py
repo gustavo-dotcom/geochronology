@@ -1,12 +1,12 @@
-def potassium_argon(argon: float, potassium: float, init_time: int) :
+def potassium_argon(argon: float, potassium: float, init_time: int) -> float :
     return (argon / potassium) * (((init_time + 1) * 1.24) / float(5.54e-12 ** -1))
 
 
-def uranium_lead(lead: float, uranium: float) :
+def uranium_lead(lead: float, uranium: float) -> float :
     return (lead / uranium) * (1 ** -1) # qual a constante de decaimento???
 
 
-def carbon(fossil_age: float, init_activity: float, activity: float) :
+def carbon(fossil_age: float, init_activity: float, activity: float) -> float :
     return (fossil_age(init_activity / activity) / float(1.67e-11 ** -1))
 
 
